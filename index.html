@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1b4b, #be185d);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Floating hearts */
+.heart {
+  position: absolute;
+  color: rgba(255,255,255,0.2);
+  font-size: 20px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-10vh); }
+}
+
+/* Main card */
+.container {
+  text-align: center;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(255, 0, 100, 0.4);
+}
+
+/* Heading */
+h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(45deg, #ff4d6d, #ff758f);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Message */
+.message {
+  margin-top: 20px;
+  line-height: 1.7;
+  display: none;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hearts -->
+<script>
+for(let i=0;i<25;i++){
+  let heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤";
+  heart.style.left = Math.random()*100 + "vw";
+  heart.style.animationDuration = (3 + Math.random()*3) + "s";
+  document.body.appendChild(heart);
+}
+</script>
+
+<div class="container">
+  <h2>My Dear Bujjii Bangaram... 💖</h2>
+  <p>Advance Happy Birthday ney pellamaa</p>
+  
+  <button onclick="showMessage()">click this</button>
+
+  <div class="message" id="msg">
+    <p>
+     I know nik idhi special em kadhu but nak chala ishtam asala eeroju  ... Ee dinamu nvu nakosam puttina dhinamu kabati nak santoshumu anamata 😌..ofc nen lucky nvu dorikav kabati nvu a janmlona chesina punyam nen dorika kabati .. to the best com bestest man ever in my life  with whom I just wanna be more naked and want  to experience pure lust with unconditional loveeee 💗🫠..... I trust you more than everyone ... I'll listen I'll stay no matter what🤞 ... Okatey fix ayya if it's not you then no one anthey🫠 .. ILOVEYOU MOREEE BANGARAM💗🫂... Happy nakosam mathramey puttina dhinamu niku 🫶🏻😚... Nuvvu entha chesina  eppudu na kanna chinna ne😹 .. na aasisulu eppudu nitho vundu gaka🙌  
+      <br><br>
+      Bangaram nakuu wish cheyyadham kudha ravatledhey andhukey nuvu pettina message petteysaa motham nii credict eyy 😛
+      <br><br>
+      Kalakalamm nuvu sukamgaa undhii nannu sukamgaa chuskoo chaluuu
+      <br><br>
+      ❤️
+    </p>
+  </div>
+</div>
+
+<script>
+function showMessage() {
+  document.getElementById("msg").style.display = "block";
+}
+</script>
+
+</body>
+</html>
